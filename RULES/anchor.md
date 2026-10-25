@@ -18,7 +18,7 @@
   "scope_in": ["明确算这节课范围的"],
   "scope_out": ["明确不算的，写下来防漂移"],
   "created_at": "ISO8601",
-  "parent_seed": { "repo": "FOEE33/course-seed", "commit": "<sha>", "manifest_version": 1 }
+  "parent_seed": { "repo": "FOEE33/learn-seed", "commit": "<sha>", "manifest_version": 1 }
 }
 ```
 

@@ -1,7 +1,7 @@
 {
   "manifest_version": 1,
-  "seed_id": "course-seed",
-  "upstream": "FOEE33/course-seed",
+  "seed_id": "learn-seed",
+  "upstream": "FOEE33/learn-seed",
   "schema": {
     "state": 1,
     "anchor": 1,

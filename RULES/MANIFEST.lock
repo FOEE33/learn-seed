@@ -1,9 +1,9 @@
-{
+﻿{
   "_note": "本库期望的 skill 版本。skill 发在 GitHub Release，库里只锁版本不内联实现。",
   "skill": "course-grower",
   "version": "0.1.0",
   "min_check_schema": 1,
-  "release": "https://github.com/FOEE33/course-seed/releases",
+  "release": "https://github.com/FOEE33/learn-seed/releases",
   "asset_pattern": "course-grower-*.zip",
   "source_dir": "SKILL/",
   "on_mismatch": {

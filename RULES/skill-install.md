@@ -5,7 +5,7 @@
 ## 装法
 
 ```bash
-gh release download --repo FOEE33/course-seed --pattern "course-grower-*.zip" --dir /tmp/cg
+gh release download --repo FOEE33/learn-seed --pattern "course-grower-*.zip" --dir /tmp/cg
 unzip /tmp/cg/course-grower-*.zip -d <skill 目录>
 ```
 

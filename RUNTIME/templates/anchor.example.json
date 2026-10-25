@@ -5,5 +5,5 @@
   "scope_in": [],
   "scope_out": [],
   "created_at": null,
-  "parent_seed": { "repo": "FOEE33/course-seed", "commit": null, "manifest_version": 1 }
+  "parent_seed": { "repo": "FOEE33/learn-seed", "commit": null, "manifest_version": 1 }
 }

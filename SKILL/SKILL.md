@@ -1,6 +1,6 @@
 ---
 name: course-grower
-description: 生长式课程的可执行流程。当你在一个 course-seed 副本里做"一轮一轮把课程长出来"的工作时使用：读锚、兑现上轮承诺、分叉下轮候选、写 checkpoint、验阶段断言。不是知识问答技能，是长程迭代的节奏控制。
+description: 生长式课程的可执行流程。当你在一个 learn-seed 副本里做"一轮一轮把课程长出来"的工作时使用：读锚、兑现上轮承诺、分叉下轮候选、写 checkpoint、验阶段断言。不是知识问答技能，是长程迭代的节奏控制。
 version: 0.1.0
 requires: python>=3.9（仅 check.py / spawn.py 需要，纯标准库）
 ---
