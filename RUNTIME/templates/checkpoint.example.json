@@ -1,0 +1,15 @@
+{
+  "cycle": 1,
+  "stage": "GROWTH",
+  "revision": 1,
+  "anchor_id": "",
+  "anchor_intact": true,
+  "promises_digest": "sha256:",
+  "fork_digest": "sha256:实际 fork.json 字节的 sha256",
+  "deliver_digest": "sha256:实际 deliver.md 字节的 sha256",
+  "prev_hash": "sha256:上一轮 self_hash（首轮为 \"sha256:\"）",
+  "self_hash": "sha256:",
+  "closed_at": null,
+  "_hash_rule": "self_hash = sha256(canonical_json(去掉 self_hash 与所有 _ 开头的键, sort_keys=True, ensure_ascii=False, separators=(',',':')))",
+  "_digest_rule": "fork_digest / deliver_digest = sha256(文件的原始字节)，不许填占位——check.py --chain 会比对实际字节"
+}

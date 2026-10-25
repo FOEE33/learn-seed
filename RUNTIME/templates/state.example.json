@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "stage": "BIRTH",
+  "stage_entered_at": null,
+  "cycle": 0,
+  "last_delivered_cycle": 0,
+  "stage_history": [],
+  "seed": { "manifest_version": 1, "parent_commit": null },
+  "runtime_id": null
+}

@@ -1,0 +1,19 @@
+# 原初库（种子库）必须干净：运行时产物一律不入库
+# 副本里这些目录才是主场
+RUNTIME/trajectory/cycles/
+RUNTIME/proposals/PROP-*.md
+RUNTIME/arbitration/ARB-*.md
+RUNTIME/transplant/TP-*.md
+RUNTIME/state.json
+
+# 打包产物
+dist/
+*.zip
+*.tgz
+
+# 本地
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+.venv/

@@ -1,0 +1,83 @@
+{
+  "manifest_version": 1,
+  "seed_id": "course-seed",
+  "upstream": "FOEE33/course-seed",
+  "schema": {
+    "state": 1,
+    "anchor": 1,
+    "promises": 1,
+    "fork": 1,
+    "checkpoint": 1,
+    "mechanism": 1
+  },
+  "inherit": {
+    "guide": {
+      "mode": "all",
+      "paths": ["RULES/**"],
+      "writable": false,
+      "note": "全继承，一字不改。写权见 RUNTIME/open-questions.md q1，当前按只读拍副本"
+    },
+    "mechanism": {
+      "mode": "portability-filtered",
+      "paths": ["SEEDS/mechanisms/**"],
+      "exclude_portability": ["local"],
+      "writable": true,
+      "note": "只继承验证过的机制层（portability != local）"
+    },
+    "topic_baseline": {
+      "mode": "same-topic-only",
+      "paths": ["SEEDS/baseline/**"],
+      "skeleton_only_if_new_topic": ["SEEDS/baseline/coverage-map.md"],
+      "note": "同主题才继承基线；换主题只继承覆盖度地图骨架"
+    }
+  },
+  "never_inherit": [
+    "RUNTIME/trajectory/**",
+    "RUNTIME/anchor.json",
+    "RUNTIME/anchor-history.jsonl",
+    "RUNTIME/promises.json",
+    "RUNTIME/state.json",
+    "RUNTIME/proposals/**",
+    "RUNTIME/arbitration/**",
+    "RUNTIME/transplant/**",
+    "RUNTIME/gaps.md",
+    "SKILL/**",
+    "scripts/__pycache__/**"
+  ],
+  "runtime_templates": {
+    "copy_from": "RUNTIME/templates",
+    "targets": {
+      "state.example.json": "RUNTIME/state.json",
+      "promises.example.json": "RUNTIME/promises.json",
+      "fork.example.json": "RUNTIME/trajectory/cycles/0001/fork.json"
+    },
+    "note": "只复制这些模板；anchor.json 由 Agent 在 BIRTH 阶段写入，不预填"
+  },
+  "checks": {
+    "required_files": [
+      "RULES/CHARTER.md",
+      "RULES/lifecycle.md",
+      "RULES/anchor.md",
+      "RULES/context.md",
+      "RULES/fork.md",
+      "RULES/degrade.md",
+      "RULES/inherit-transplant.md",
+      "RULES/conflict.md",
+      "RULES/proposal.md",
+      "RULES/search-scope.md",
+      "RULES/skill-install.md",
+      "RULES/MANIFEST.lock",
+      "SEEDS/MANIFEST.json",
+      "SEEDS/baseline/coverage-map.md",
+      "SEEDS/state.seed.json",
+      "RUNTIME/templates/state.example.json"
+    ],
+    "forbidden_in_seed": [
+      "RUNTIME/trajectory/cycles",
+      "RUNTIME/anchor.json",
+      "RUNTIME/promises.json",
+      "RUNTIME/state.json"
+    ]
+  },
+  "generated_at": "2026-02-01"
+}

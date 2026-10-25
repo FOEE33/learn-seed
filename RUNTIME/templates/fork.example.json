@@ -1,0 +1,23 @@
+{
+  "cycle": 1,
+  "stage": "BIRTH",
+  "scanned": ["gap", "blocked", "prereq", "user"],
+  "candidates": [
+    {
+      "id": "C-01",
+      "claim": "",
+      "source": "gap",
+      "basis": [],
+      "priority": 0,
+      "cost": 1,
+      "risk": "low",
+      "rubric": { "gap_value": 0, "prereq_blocking": 0, "user_alignment": 0, "cost_fit": 0 },
+      "excluded": null
+    }
+  ],
+  "excluded": [],
+  "chosen": "",
+  "why_chosen": "",
+  "why_not_others": {},
+  "next_promise": ""
+}
