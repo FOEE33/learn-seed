@@ -1,4 +1,4 @@
-﻿{
+{
   "_note": "本库期望的 skill 版本。skill 发在 GitHub Release，库里只锁版本不内联实现。",
   "skill": "course-grower",
   "version": "0.1.0",
